@@ -3,8 +3,9 @@ import './Country.css';
 
 //receive   
 const Country = (props) => {
-;
-    const {name, area, region, flags} = props.country;
+
+    //destructor
+    const {name, area, region, flags, population} = props.country;
 
     return(
         <div className='country'>
@@ -12,6 +13,7 @@ const Country = (props) => {
             <img src={flags.png} alt="" />
             <h3>Area: {area}</h3>
             <h4>Region: {region}</h4>
+            <h4>Population: {population}</h4>
         </div>
     );
 };
